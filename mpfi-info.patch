@@ -1,0 +1,14 @@
+--- mpfi-1.5.4/doc/mpfi.texi.orig	2022-03-25 17:57:26.000000000 +0100
++++ mpfi-1.5.4/doc/mpfi.texi	2023-07-07 21:33:43.704071666 +0200
+@@ -8,9 +8,9 @@
+ @end iftex
+ @comment %**end of header
+ 
+-@dircategory Software libraries
++@dircategory Libraries:
+ @direntry
+-* mpfi: (mpfi.info).               Multiple Precision Floating-Point Interval Library.
++* mpfi: (mpfi.info).			Multiple Precision Floating-Point Interval Library
+ @end direntry
+ 
+ @c smallbook

@@ -1,0 +1,41 @@
+--- mpfi-1.5.4/tests/exp10.dat.orig	1970-01-01 01:00:00.000000000 +0100
++++ mpfi-1.5.4/tests/exp10.dat	2023-07-07 21:25:42.226680053 +0200
+@@ -0,0 +1,38 @@
++# data file for mpfi_exp10
++#
++# column fields:
++# 1: inexact flag (returned value)
++# 2: precision of result
++# 3: left endpoint value of result
++# 4: right endpoint value of result
++#
++# 5: precision of input parameter
++# 6: left endpoint value of input parameter
++# 7: right endpoint value of input parameter
++
++# special values
++0 53  nan  nan    53  nan  nan
++0 53  nan -0      53  nan -inf
++0 53  10   nan    53  1    nan
++0 53  nan  1      53  nan -0
++0 53  1    nan    53   +0  nan
++0 53  nan 10      53  nan  1
++0 53 +inf  nan    53 +inf  nan
++0 53 +0   -0      53 -inf -inf
++0 53 +0   10      53 -inf  1
++0 53 +0    1      53 -inf -0
++0 53 +0  100      53 -inf  2
++0 53 +0   +inf    53 -inf +inf
++0 53  1    1      53 +0   -0
++0 53  1   10      53 +0   +1
++0 53  1   +inf    53 +0   +inf
++0 53 +inf +inf    53 +inf +inf
++
++# regular values
++0 53  100                   100000                  53  2        5
++0 53  1000                  10000                   53  3        4
++3 53  0xb.ff911208aecc8p-4  0x1.c73d51c54470fp+0    53 -0.125    0.25
++1 53  0xb.ff911208aecc8p-4  1                       53 -0.125   -0
++2 53  1                     0x1.c73d51c54470fp+0    53 +0        0.25
++3 53  0x1.00000000002ep+0   0x1.000000000032bp+0    53  0xap-47  0xbp-47
++3 53  0x4.378b053ea2148p+0  0x2.6b69b3525bbc4p+4676 53  0xap-4   0xbp7
