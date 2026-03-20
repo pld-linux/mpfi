@@ -7,13 +7,14 @@ Summary:	Multiple-precision floating-point interval library
 Summary(pl.UTF-8):	Biblioteka przedziałów zmiennoprzecinkowych wielokrotnej precyzji
 Name:		mpfi
 Version:	1.5.4
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://perso.ens-lyon.fr/nathalie.revol/softwares/%{name}-%{version}.tar.xz
 # Source0-md5:	efff5c254d1af49f42ed75cbcd9166db
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-missing.patch
+Patch2:		%{name}-tests.patch
 URL:		http://perso.ens-lyon.fr/nathalie.revol/software.html
 BuildRequires:	gmp-devel >= 4.1
 BuildRequires:	mpfr-devel >= 4.0.1
@@ -79,6 +80,7 @@ Statyczna biblioteka MPFI.
 %setup -q
 %patch -P0 -p1
 %patch -P1 -p1
+%patch -P2 -p1
 
 %build
 %configure \
